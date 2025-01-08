@@ -73,52 +73,155 @@
 }
 
 .icon-usuarios {
-  color: #4CAF50; /* Verde para Usuarios */
+  color: #4CAF50; 
 }
 
 .icon-personal {
-  color: #2196F3; /* Azul para Personal */
+  color: #2196F3; 
 }
 
 .icon-centros-inspeccion {
-  color: #FF5722; /* Naranja para Centros de Inspección */
+  color: #FF5722; 
 }
 
 .icon-lineas {
-  color: #FF9800; /* Amarillo para Líneas */
+  color: #FF9800; 
 }
 
 .icon-horarios {
-  color: #9C27B0; /* Morado para Horarios de las Líneas */
+  color: #9C27B0; 
 }
 
 .icon-solicitudes {
-  color: #009688; /* Teal para Solicitudes */
+  color: #009688; 
 }
 
 .icon-reportes {
-  color: #3F51B5; /* Azul oscuro para Reportes */
+  color: #3F51B5;
 }
 
 .icon-graficos-pdf {
-  color: #E91E63; /* Rosa para Gráficos y PDF */
+  color: #E91E63; 
 }
 
 .icon-api-rest {
-  color: #795548; /* Marrón para Servicios API REST */
+  color: #795548; 
 }
 
 .icon-ruat {
-  color: #607D8B; /* Gris para RUAT */
+  color: #607D8B; 
 }
 
 .icon-pagos-qr {
-  color: #00BCD4; /* Aqua para Pagos QR */
+  color: #00BCD4; 
 }
 .icon-medicion {
-  color: #FF5722; /* Naranja para el módulo de Mediciones */
+  color: #FF5722; 
 }
 
+.languages-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 120px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card i {
+  font-size: 50px; 
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.version-circle {
+  margin-top: 10px;
+  padding: 5px 15px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  min-width: 40px;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card i:hover {
+  color: #3498db; 
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .languages-cards {
+      justify-content: space-evenly;
+      gap: 10px;
+  }
+
+  .card {
+      width: 90px; 
+      padding: 15px; 
+  }
+
+  .card i {
+      font-size: 40px;
+  }
+
+  .card p {
+      font-size: 14px;
+  }
+
+  .version-circle {
+      font-size: 12px;
+      padding: 4px 12px;
+      min-width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .languages-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 100px; 
+      padding: 10px; 
+  }
+
+  .card i {
+      font-size: 35px; 
+  }
+
+  .card p {
+      font-size: 12px; 
+  }
+
+  .version-circle {
+      font-size: 10px; 
+      padding: 3px 10px;
+      min-width: 30px;
+  }
+}
 
 /* Fonts */
 :root {
